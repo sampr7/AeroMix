@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: AeroMix
+Version: 0.0.1
+Summary: Python package for modeling aerosol optical properties
+Home-page: https://github.com/sampr7/AeroMix
+Author: Sam P Raj
+Author-email: sampr7@gmail.com
+License: GPL-3.0
+Keywords: aerosol model mixing state AOD SSA g
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: License :: OSI Approved :: GPL-3.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENCE
+Requires-Dist: numpy>=1.13
+Requires-Dist: scipy>=1.5
+Requires-Dist: PyMieScatt>=1.8.0
