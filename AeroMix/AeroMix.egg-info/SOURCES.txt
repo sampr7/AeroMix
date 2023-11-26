@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+aeromix/AeroMix_main.py
+aeromix/CopyAerosolData.py
+aeromix/getAerosolType.py
+aeromix/newAerosol.py
+aeromix/AeroMix.egg-info/PKG-INFO
+aeromix/AeroMix.egg-info/SOURCES.txt
+aeromix/AeroMix.egg-info/dependency_links.txt
+aeromix/AeroMix.egg-info/requires.txt
+aeromix/AeroMix.egg-info/top_level.txt
