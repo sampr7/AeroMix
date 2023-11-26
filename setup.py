@@ -4,23 +4,30 @@
 
 """
 from setuptools import setup
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 setup(
       name='AeroMix',
-      version='0.0.1',
+      version='0.1.0',
       description='Python package for modeling aerosol optical properties',
+      long_description=long_description,
+      long_description_content_type='text/markdown',
       url='https://github.com/sampr7/AeroMix',
       author='Sam P Raj',
       author_email='sampr7@gmail.com',
-      licence='GPL-3.0',
-      py_modules=['run','getAerosolType','CopyAerosolData','ext_aerosol','cs_aerosol','getSampleInputDict_ext','getSampleInputDict_cs'],
-      package_dir={'': 'aeromix'},
+      licence='GNU General Public License v3 (GPLv3)',
+      packages=['AeroMix'],
+      package_dir={'AeroMix': 'AeroMix'},
       classifiers=[
-    'Development Status :: 3 - Alpha',
+    'Development Status :: 4 - Beta',
     'Intended Audience :: Science/Research',
     'Topic :: Scientific/Engineering :: Atmospheric Science',
-    'License :: OSI Approved :: GPL-3.0',
+    'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
     'Programming Language :: Python :: 3',
     'Operating System :: OS Independent',],
     keywords=['aerosol model mixing state AOD SSA g'],
-    install_requires=['numpy >=1.13','scipy >=1.5','PyMieScatt >=1.8.0'])
+    install_requires=['numpy','scipy','PyMieScatt'],
+    package_data={'AeroMix':['aerosol_components/*']},
+    zip_safe=False)
