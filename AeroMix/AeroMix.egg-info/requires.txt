@@ -1,3 +1,0 @@
-numpy>=1.13.1
-scipy
-PyMieScatt>=1.8.0
