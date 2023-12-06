@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-AeroMix v 0.1.0 | Python package for modeling aerosol optical properties
+AeroMix v 1.0.0 | Python package for modeling aerosol optical properties
 Copyright © 2023  Sam P Raj
 
 This program is free software: you can redistribute it and/or modify
@@ -377,7 +377,7 @@ def run(input_dict):
     layer6_params = {'Layer':6, 'Relative humidity':var['Layer6 relative humidity'], 'Number concentration (1/cm³)':NumDens6,'Mass concentration (ug/m³)':mass_calc6,'Volume concentration (um³/m³)':vol_calc6,
                      'Number mixing ratio':no_mix_ratio6,'Mass mixing ratio':mass_mix_ratio6,'Volume mixing ratio':vol_mix_ratio6,'Extinction coefficient (1/km)':extcalc6,
                      'Scattering coefficient (1/km)':scacalc6,'Absorption coefficient (1/km)':abscalc6,'SSA':ssacalc6,'g':gcalc6,'AOD':AOD6}
-    output = {'AeroMix version': '0.1.0','Relative humidity':var['Layer1 relative humidity'],
+    output = {'AeroMix version': '1.0.0','Relative humidity':var['Layer1 relative humidity'],
               'Number concentration (1/cm³)':NumDens1,'Mass concentration (ug/m³)':mass_calc1,'Volume concentration (um³/m³)':vol_calc1,
                                'Number mixing ratio':no_mix_ratio1,'Mass mixing ratio':mass_mix_ratio1,'Volume mixing ratio':vol_mix_ratio1,'Extinction coefficient (1/km)':extcalc1,
                                'Scattering coefficient (1/km)':scacalc1,'Absorption coefficient (1/km)':abscalc1,'SSA':ssacalc1,'g':gcalc1,

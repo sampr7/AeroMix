@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-AeroMix v 0.1.0 | Python package for modeling aerosol optical properties
+AeroMix v 1.0.0 | Python package for modeling aerosol optical properties
 Copyright © 2023  Sam P Raj
 """
 
