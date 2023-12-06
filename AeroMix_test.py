@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Nov 26 16:20:52 2023
-
-@author: sam
-"""
 import os
 import AeroMix
 

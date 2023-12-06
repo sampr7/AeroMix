@@ -10,7 +10,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
       name='AeroMix',
-      version='0.1.0',
+      version='1.0.0',
       description='Python package for modeling aerosol optical properties',
       long_description=long_description,
       long_description_content_type='text/markdown',
@@ -21,7 +21,7 @@ setup(
       packages=['AeroMix'],
       package_dir={'AeroMix': 'AeroMix'},
       classifiers=[
-    'Development Status :: 4 - Beta',
+    'Development Status :: 5 - Production/Stable',
     'Intended Audience :: Science/Research',
     'Topic :: Scientific/Engineering :: Atmospheric Science',
     'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',

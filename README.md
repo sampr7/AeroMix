@@ -4,10 +4,10 @@ Python package for modeling aerosol optical properties
 
 ## Installation
 
-Use the package manager [pip](https://test.pypi.org/) to install AeroMix.
+Use the package manager [pip](https://pypi.org/) to install AeroMix.
 
 ```bash
-pip install -i https://test.pypi.org/simple/ AeroMix
+pip install AeroMix
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ AeroMix.run(input_dict)
 ```
 
 ## Documentation
-Detailed documentation is coming soon
+Find detailed documentation is coming soon
 
 ## License
 
