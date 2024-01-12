@@ -24,7 +24,7 @@ AeroMix.run(input_dict)
 ```
 
 ## Documentation
-Detailed documentation is coming soon
+See detailed documentation [here](Documentation.md)
 
 ## License
 
