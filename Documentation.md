@@ -10,7 +10,7 @@ Use the package manager [pip](https://pypi.org/) to install AeroMix.
 pip install AeroMix
 ```
 ## Usage
-AeroMix requires the inputs of component-wise aerosol number/mass concentration, wavelengths, relative humidity, and aerosol vertical profile information to calculate the optical properties, such as
+AeroMix is a versatile Python package designed for computing a wide range of optical and physical properties of aerosol mixtures using the inputs on component-wise aerosol number/mass concentration, wavelengths, relative humidity, and aerosol vertical profile information. The output parameters of AeroMix encompasses the aerosol optical properties such as,
 
 1. Aerosol optical depth (AOD)
 2. Single scattering albedo (SSA)
@@ -28,7 +28,8 @@ and the physical properties, such as
 5. Number mixing ratio
 6. Volume mixing ratio
 
-AeroMix takes input as a dictionary of input parameters. Sample input dictionaries in the required format are given for ten different aerosol mixtures. This can be loaded as
+### Configuring AeroMix inputs
+AeroMix takes input as a dictionary of input parameters. Sample input dictionaries in the required format are given for ten different aerosol mixtures. Use the *getAerosolType* function to load the sample input dictionaries.
 
 ***AeroMix.getAerosolType(aerosol_type, [wavelength_array], mixed_layer_relative_humidity)***
 
@@ -54,8 +55,24 @@ AeroMix takes input as a dictionary of input parameters. Sample input dictionari
 > ```
 
 This dictionary can be used as an input for the AeroMix to run to calculate the optical properties of respective aerosol mixtures. The parameters in this dictionary can be edited, or a new dictionary in the same format can be created to define custom aerosol mixtures.
+```python
+import AeroMix
+# get a sample input dictionary
+input_dict = AeroMix.getAerosolType('urban',[0.4,0.5,0.6,0.7,0.8],80)
+# changing the maximum number of components and adjusting number concentrations of components in each layer
+input_dict['Maximum number of components'] = 9
+input_dict['Layer1 component concentration'] = {1: 0,2: 2200,3: 0,4: 0,5: 0.001,6: 0,7: 0,8: 0,9:0}
+input_dict['Layer2 component concentration'] = {1: 0,2: 0,3: 0,4: 0,5: 0,6: 0,7: 0,8: 0,9:0}
+input_dict['Layer3 component concentration'] = {1: 0.0013,2: 438.0,3: 438.0,4: 0,5: 0,6: 0,7: 0,8: 0,9:0}
+input_dict['Layer4 component concentration'] = {1: 0,2: 0,3: 0,4: 0,5: 0,6: 0,7: 0,8: 0,9:3}
+input_dict['Layer5 component concentration'] = {1: 0,2: 0,3: 0,4: 0,5: 0,6: 0,7: 0,8: 0,9:0}
+input_dict['Layer6 component concentration'] = {1: 0,2: 0,3: 0,4: 0,5: 0,6: 0,7: 0,8: 0,9:0}
+# changing the aerosol profile type in layer 3
+input_dict['Layer3 profile type'] = 0
+```
 
-To calculate the optical properties, run
+### Running AeroMix
+To calculate the optical and physical properties, use the *run* function.
 
 ***AeroMix.run(input_dict)***
 
@@ -183,6 +200,23 @@ To calculate the optical properties, run
 > > *output_dict['Layerx']['g']*: Asymmetry parameter at the layer *x*.
 > > 
 > > *output_dict['Layerx']['AOD']*: Aerosol optical depth of aerosols in the layer *x*.
+> 
+> Example
+> ```python
+> In[1]: import AeroMix
+> # Running AeroMix
+> In[2]: input_dict = AeroMix.getAerosolType('urban',[0.4,0.5,0.6,0.7,0.8],80)
+> In[3]: output = AeroMix.run(input_dict)
+> # Accessing output parameters
+> In[4]: print(output['Total column AOD'])
+> Out[4]: 
+> {0.4: 0.9523364416499044, 0.5: 0.7304236336114844, 0.6: 0.5715173653793031, 0.7: 0.45918529871590336, 0.8: 0.37323228400622516}
+> In[5]: print(output['Absorption coefficient (1/km)'])
+> Out[5]: {0.4: 0.09103009999999999, 0.5: 0.07176779999999999, 0.6: 0.0584251, 0.7: 0.0495307, 0.8: 0.0440769}
+> In[6]: print(output['Layer3']['Scattering coefficient (1/km)'])
+> Out[6]: {0.4: 0.0043851591, 0.5: 0.003322391, 0.6: 0.0025509650999999997, 0.7: 0.0019946607000000003, 0.8: 0.0015466363799999999}
+> ```
+
 ## License
 
 [GNU General Public License v3 (GPLv3)](https://www.gnu.org/licenses/gpl-3.0.en.html)
