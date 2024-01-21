@@ -27,7 +27,7 @@ AeroMix.run(input_dict)
 ```
 
 ## Documentation
-See detailed documentation [here](Documentation.md)
+See detailed documentation [here](https://github.com/sampr7/AeroMix/blob/main/Documentation.md).
 
 ## License
 
