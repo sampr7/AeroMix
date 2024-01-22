@@ -1,4 +1,0 @@
-from AeroMix.AeroMix_main import run
-from AeroMix.getAerosolType import getAerosolType
-from AeroMix.CopyAerosolData import CopyAerosolData
-from AeroMix.newAerosol import ext_aerosol,cs_aerosol,getSampleInputDict_ext,getSampleInputDict_cs
