@@ -35,3 +35,4 @@ See detailed documentation [here](https://github.com/sampr7/AeroMix/blob/main/Do
 
 ## Contact
 We are continuously working to improve and enhance the capabilities of our package. Your feedback, suggestions, and reports of any bugs you encounter are incredibly valuable to us. We welcome you to join the discussion on our [GitHub page](https://github.com/sampr7/AeroMix)  or feel free to reach out directly via email. Please send your thoughts and reports to sampr7@gmail.com. 
+

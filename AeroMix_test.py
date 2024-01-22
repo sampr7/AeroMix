@@ -1,11 +1,10 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+"""Sample python program for testing AeroMix."""
 import os
 import AeroMix
 
 #%% Loading sample input dictionary
 
-input_dict = AeroMix.getAerosolType('urban', [0.4,0.5,0.6,0.7,0.8],80)
+input_dict = AeroMix.getAerosolType('urban', [0.4, 0.5, 0.6, 0.7, 0.8], 80, 15)
 
 output = AeroMix.run(input_dict)
 
