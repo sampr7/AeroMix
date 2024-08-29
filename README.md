@@ -31,6 +31,11 @@ AeroMix.run(input_dict)
 ## Documentation
 See detailed documentation [here](https://github.com/sampr7/AeroMix/blob/main/Documentation.md).
 
+## How to cite
+If you use AeroMix in your research, please cite the following paper:
+
+>Raj, S. P., Sinha, P. R., Srivastava, R., Bikkina, S., and Subrahamanyam, D. B.: AeroMix v1.0.1: a Python package for modeling aerosol optical properties and mixing states, Geosci. Model Dev., 17, 6379–6399, https://doi.org/10.5194/gmd-17-6379-2024, 2024.
+
 ## License
 
 [GNU General Public License v3 (GPLv3)](https://www.gnu.org/licenses/gpl-3.0.en.html)
