@@ -7,6 +7,9 @@
 
 AeroMix is a versatile open-source aerosol optical model framework designed for computing a wide range of optical and physical properties of complex aerosol mixtures.
 
+## Announcements
+19/09/25: [Fix for import error due to SciPy update](https://github.com/sampr7/AeroMix/discussions/2)
+
 ## Installation
 
 Use the package manager [pip](https://pypi.org/) to install AeroMix.
