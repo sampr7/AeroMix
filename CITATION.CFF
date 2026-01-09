@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "AeroMix v1.0.1: a Python package for modeling aerosol optical properties and mixing states"
+authors:
+  - family-names: "Raj"
+    given-names: "S. P."
+  - family-names: "Sinha"
+    given-names: "P. R."
+  - family-names: "Srivastava"
+    given-names: "R."
+  - family-names: "Bikkina"
+    given-names: "S."
+  - family-names: "Subrahamanyam"
+    given-names: "D. B."
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Raj"
+      given-names: "S. P."
+    - family-names: "Sinha"
+      given-names: "P. R."
+    - family-names: "Srivastava"
+      given-names: "R."
+    - family-names: "Bikkina"
+      given-names: "S."
+    - family-names: "Subrahamanyam"
+      given-names: "D. B."
+  doi: "10.5194/gmd-17-6379-2024"
+  journal: "Geoscientific Model Development"
+  title: "AeroMix v1.0.1: a Python package for modeling aerosol optical properties and mixing states"
+  year: 2024
+  volume: 17
+  issue: 16
+  start: 6379
+  end: 6399
+  url: "https://gmd.copernicus.org/articles/17/6379/2024/"
