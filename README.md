@@ -4,6 +4,8 @@
 *[Indian Institute of Space Science and Technology, Thiruvananthapuram](https://www.iist.ac.in/), IN*  
 
 [![Static Badge](https://img.shields.io/badge/DOI-10.5194%2Fgmd--17--6379--2024-blue?style=flat)](https://doi.org/10.5194/gmd-17-6379-2024)    [![Downloads](https://static.pepy.tech/badge/AeroMix)](https://pepy.tech/project/AeroMix)
+ [![PyPI Downloads](https://img.shields.io/pypi/dm/AeroMix.svg?label=PyPI%20downloads)](
+https://pypi.org/project/AeroMix/)
 
 AeroMix is a versatile open-source aerosol optical model framework designed for computing a wide range of optical and physical properties of complex aerosol mixtures.
 
