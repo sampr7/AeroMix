@@ -212,7 +212,7 @@ Create new aerosol components in an externally mixed state (where one component 
 > >
 > > *ext_input['Output directory']* (str): Location to save the component data file.
 > > 
-> > *ext_input['Output filename']* (str): Filename of the component data file in the format customxx where xx is the assigned component number to call in AeroMix. Component number for custom aerosol components should be greater than 9 and unique.
+> > *ext_input['Output filename']* (str): The filename for the component data file in the format customx, where x is a unique assigned integer greater than zero. To define the concentration for this custom component, assign the desired value to key x + 9 within the AeroMix input dictionary. For example, if component name is custom5, its concentration is defined in the AeroMix input dictionary using the key 14 ($5 + 9 = 14$).
 > >
 > > *ext_input['RH']* (int): Relative humidity corresponding to the size distribution parameters and refractive indices of the component. Acceptable values are (*0,50,70,80,90,95,98,99*).
 > >
@@ -278,7 +278,7 @@ Create aerosol components in a core-shell mixed state (two components forming a 
 > > 
 > > *cs_input['Output directory']* (str): Target location to save the component data file.
 > > 
-> > *cs_input['Output filename']* (str): Filename of the component data file. Name should be in the format customxx where xx is the assigned component number to call in AeroMix. Component number for custom aerosol components should be greater than 9 and unique.
+> > *cs_input['Output filename']* (str): The filename for the component data file in the format customx, where x is a unique assigned integer greater than zero. To define the concentration for this custom component, assign the desired value to key x + 9 within the AeroMix input dictionary. For example, if component name is custom5, its concentration is defined in the AeroMix input dictionary using the key 14 ($5 + 9 = 14$).
 > >
 > > *cs_input['RH']* (int): Relative humidity corresponding to the size distribution parameters and refractive indices of the component. Acceptable values are (*0,50,70,80,90,95,98,99*).
 > > 
