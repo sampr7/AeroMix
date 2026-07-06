@@ -87,7 +87,7 @@ The *run* function in AeroMix calculates the optical and physical properties of 
 > >
 > > *input_dict['Component file directory']* (str): Path to the aerosol database. Put *'def'* for the default directory.
 > >
-> > *input_dict['Input unit']* (int): The unit of aerosol concentration input. Use 0 for number concentration (N cm<sup>-3</sup>) and  1 for mass concentration (µg cm<sup>-3</sup>). This setting is common for all layers.
+> > *input_dict['Input unit']* (int): The unit of aerosol concentration input. Use 0 for number concentration (N cm<sup>-3</sup>) and  1 for mass concentration (µg m<sup>-3</sup>). This setting is common for all layers.
 > >
 > > *input_dict['Layer1 profile type']* (int): Function type representing aerosol vertical profile in the first vertical layer (mixed layer). Use 0 for exponential function, 1 for a homogenous layer and 2 for a cubic function.
 > >
